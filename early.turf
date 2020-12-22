@@ -1,0 +1,24 @@
+<!-- @import #sorse/kit/head.kit-->
+<body>
+
+<div class="one-screen">
+    <div class="one-screen__left">
+        <a href="/" class="one-screen__left-logo"><img src="img/logo25.svg" alt=""></a>
+    </div>
+    <div class="one-screen__right">
+        <img class="one-screen__logo" src="img/reg/logo.svg" alt="">
+        <div class="one-screen__content">
+            <div class="one-screen__title">Ещё рано...</div>
+            <p>Заходи 27 декабря, здесь состоится онлайн-вечеринка «Z-квартирник»  для команды Банка ЗЕНИТ!</p>
+            <p>Мы готовим кое-что очень интересное! Тебе точно понравится!</p>
+            <p>До встречи 27.12 на этом же месте в 15:00 по МСК! ❤️</p>
+        </div>
+        
+    </div>
+</div>
+
+
+<!-- @import #sorse/kit/foot-script.kit -->
+
+</body>
+</html>

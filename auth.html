@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="one-screen">
+    <div class="one-screen__left">
+        <a href="/" class="one-screen__left-logo"><img src="img/reg/logo25.svg" alt=""></a>
+    </div>
+    <div class="one-screen__right">
+        <img class="one-screen__logo" src="img/logo.svg" alt="">
+        <div class="one-screen__content">
+            <div class="one-screen__title">Добро пожаловать</div>
+            <p>Мы просим себя назвать для того, чтобы ведущий мог к вам обратиться по имени и для создания новогоднего настроения</p>
+            <form action="" class="one-screen__form form-reg">
+                <label>
+                    Имя
+                    <input type="text" name="name" required placeholder="Имя">
+                </label>
+                <label>
+                    Никнейм
+                    <input type="text" name="nick" required placeholder="Никнейм">
+                    <span class="error__text error__nicname">занят</span>
+                </label>
+                <label>
+                    Личная почта
+                    <input type="text" name="email" required placeholder="username@mail.ru" >
+                </label>
+                <div class="label-code">
+                    <label>
+                        Код подтверждения
+                        <input type="password" name="code" required placeholder="**********" >
+                    </label>
+                    <div class="one-screen__email-code">Получить код</div>
+                </div>
+                <div class="one-screen__personal-data">Фраза о том, что это персональные данные не собираются</div>
+                <button class="btn btn-disabled">Войти</button>
+                <!-- после успешного заполнения форм remove class btn-disabled and add class btn-blue   -->
+            </form>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/reg.js"></script>
+
+
+
+</body>
+</html>

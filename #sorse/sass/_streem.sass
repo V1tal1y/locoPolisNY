@@ -1,0 +1,626 @@
+.overflowx
+    width: 100%
+    overflow: hidden
+.streem
+    width: 100%
+.streem-page
+    background: $bl14 url('../img/body-bg.svg') top
+    background-size: 100% auto
+
+    
+.streem-window
+    padding: 20px 20px 40px 110px
+    display: flex
+    justify-content: space-between
+    background: #A5C9FF url('../img/streem/widow-streem.svg')
+    background-size: 100%
+    border-radius: 24px
+    position: relative
+    &__images
+        pointer-events: none
+        img
+            display: block
+            position: absolute
+            top: 100vw
+            &:first-child
+                z-index: -2
+                top: -6vw
+                left: 16.5vw
+                width: 10vw
+            &:nth-child(2)
+                top: -5vw
+                z-index: -2
+                right: 14vw
+                width: 11vw
+            &:nth-child(3)
+                top: auto
+                bottom: -12vw
+                left: -11vw
+                width: 22vw
+            &:nth-child(4)
+                top: -4vw
+                right: -8vw
+                width: 12vw
+            &:nth-child(5)
+                z-index: -2
+                top: 11.2vw
+                right: -18.2vw
+                width: 27vw
+            &:nth-child(6)
+                top: 64%
+                left: -5vw
+                width: 3vw
+            &:nth-child(7)
+                z-index: -2
+                top: 98%
+                left: 40%
+                width: 3vw
+            &:nth-child(8)
+                top: 86%
+                left: 103%
+                width: 2.5vw
+            &:nth-child(9)
+                top: auto
+                bottom: -16%
+                left: 86%
+                width: 2.85vw
+            &:nth-child(10)
+                top: auto
+                top: -11%
+                left: 65%
+                width: 2.85vw
+
+    &__video
+        position: relative
+        &::after
+            content: ''
+            display: block
+            width: 100%
+            padding-top: 56.25%
+        iframe
+            width: 100%
+            height: 100%
+            border: none
+            position: absolute
+            top: 0
+            left: 0
+    &__title
+        font-weight: 500
+        font-size: 38px
+        line-height: 1
+        height: 60px
+        color: $bl14
+    &__right
+        width: 33.5%
+    &__left
+        width: 64.4%
+
+.streem-chat
+    height: calc( 100% - 60px )
+    display: flex
+    justify-content: flex-end
+    flex-direction: column
+    color: $dbl
+    /* width */
+    ::-webkit-scrollbar
+        width: 6px
+    /* Track */
+    ::-webkit-scrollbar-track
+        border-radius: 10px
+        background: #98B9EB
+    /* Handle */
+    ::-webkit-scrollbar-thumb
+        background: $bl14
+        border-radius: 10px
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover
+        background: $dbl
+    &__messages
+        width: calc( 100% + 5px )
+        padding-right: 5px
+        height: 0
+        overflow-y: auto
+        // transform: scaleY(-1)
+    &__text
+        // transform: scaleY(-1)
+    &__username
+        color: $btnbl
+        font-size: 12px
+        font-weight: bold
+        text-transform: uppercase
+        letter-spacing: 0.02em
+    &__name
+        font-size: 12px
+        color: $wbl
+        padding-bottom: 10px
+    &__time
+        text-align: right
+        font-size: 12px
+        color: $wbl
+    &__message
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1)
+        border-radius: 24px
+        background: #ffffff
+        padding: 15px 20px
+        margin-bottom: 10px
+        width: 80%
+        &:last-child
+            margin-bottom: 0
+        p
+            font-size: 14px
+            left: 1.4
+            padding-bottom: 5px
+    &__my-message
+        background: #EDFFFD
+        margin-left: auto
+    &__bot
+        width: 100%
+        margin-top: 10px
+    &__form
+        background: #ffffff
+        box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.25)
+        border-radius: 24px
+        padding: 15px 20px 17px
+        .btn
+            width: 146px
+            height: 51px
+            font-size: 21px
+            margin-left: 10px
+            letter-spacing: 0.02em
+        textarea
+            width: 100%
+            height: 100px
+            border: none
+            outline: none
+            resize: none
+            margin-bottom: 10px
+            color: $dbl
+        &-bot
+            display: flex
+            align-items: center
+            justify-content: flex-end
+
+    &__files-name
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        width: calc( 100% + 10px )
+    &__file
+        width: 56px
+        height: 51px
+        background-image: url('../img/icons/attachment.svg')
+        background-repeat: no-repeat
+        background-position: center
+        display: block
+        &-name
+            overflow: hidden
+            text-overflow: ellipsis
+            padding: 0 45px 0 20px
+            background: #C6EFEA
+            box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1)
+            border-radius: 24px
+            height: 36px
+            line-height: 36px
+            white-space: nowrap
+            position: relative
+            margin-bottom: 10px
+            margin-right: 10px
+            max-width: 100%
+            font-size: 14px
+        &-close
+            background: url('../img/icons/close-del.svg') no-repeat center
+            width: 24px
+            height: 24px
+            position: absolute
+            top: 5px
+            right: 11px
+            cursor: pointer
+        input
+            display: none
+    &__files
+        display: flex
+        align-items: center
+
+.b-title
+    padding-bottom: 2.344vw
+    font-weight: 500
+    font-size: 3.35vw
+    line-height: 1.2
+    text-align: center
+
+.musical-vote
+    padding: 60px 4vw 35px 5.73vw
+    color: #FFFFFF
+    position: relative
+    &::before
+        content: ''
+        width: 20vw
+        height: 30vw
+        display: block
+        background: url('../img/bgicons/branch2.png') no-repeat center
+        background-size: 100%
+        position: absolute
+        left: -14vw
+        top: 55%
+        pointer-events: none
+    .btn
+        width: 12.5vw
+        height: 3.17vw
+        font-size: 1.48vw
+        padding-bottom: 2px
+        margin-right: 1.73vw
+    &__item
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 1.3vw
+    &__name
+        font-size: 1.98vw
+        font-weight: 500
+        padding-bottom: 0.6vw
+    &__subname
+        font-size: 1.48vw
+    &__right
+        width: 42.65%
+        display: flex
+        justify-content: flex-end
+        align-items: center
+    &__left
+        width: 55%
+    &__procent
+        display: none
+        align-items: center
+        width: 100%
+        // 30,208
+        &-box
+            width: calc(100% - 115px)
+        &-line
+            background: #FFFF00
+            border-radius: 10px
+            height: 3.125vw
+        &-favorite
+            background: #FF9900
+    &__nums
+        white-space: nowrap
+        font-size: 1.48vw
+        text-align: right
+        margin-right: 1.06vw
+        width: 5.9896vw
+        span
+            font-size: 0.7292vw
+            display: block
+    &__success
+        .btn
+            display: none
+        .musical-vote
+            &__procent
+                display: flex
+
+        
+
+
+
+.stream-schedule
+    padding: 0 5.73vw 35px
+    color: #FFFFFF
+    position: relative
+    &::after
+        content: ''
+        display: block
+        pointer-events: none
+        width: 26vw
+        height: 35vw
+        position: absolute
+        top: -3vw
+        right: -10vw
+        background: url('../img/bgicons/prize.png') no-repeat center
+        background-size: cover
+    &__item
+        display: flex
+        align-items: flex-start
+        justify-content: flex-start
+        margin-bottom: 1.3vw
+    &__time
+        font-size: 1.98vw
+        font-weight: 500
+        width: 14.584vw
+        white-space: nowrap
+        padding-right: 3vw
+        position: relative
+        &::after
+            content: '—'
+            right: .9vw
+            position: absolute
+            top: 0
+    p
+        padding-top: 0.3vw
+        font-size: 1.48vw
+        width: 51.8vw
+    .no-active
+        color: $wbl
+
+.foot-contacts
+    color: #FFFFFF
+    padding: 0 14.614vw 35px 20.314vw
+    font-size: 1.48vw
+    position: relative
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        top: -1vw
+        left: -5vw
+        width: 19vw
+        height: 17vw
+        background: url('../img/bgicons/orange2.png') no-repeat center
+        background-size: cover
+        pointer-events: none
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        top: 6vw
+        right: -4vw
+        width: 16vw
+        height: 13vw
+        background: url('../img/bgicons/orange3.png') no-repeat center
+        background-size: cover
+        pointer-events: none
+    p
+        padding-bottom: 1.1em
+
+.foot-fruits
+    height: 25vw
+    position: relative
+    // pointer-events: none
+    img
+        position: absolute
+    img
+        &:first-child
+            top: -5vw
+            left: -11vw
+            width: 23.438vw
+        &:nth-child(2)
+            bottom: 0vw
+            left: 29vw
+            width: 22.031vw
+        &:nth-child(3)
+            bottom: -19vw
+            right: -29.5vw
+            width: 66.615vw
+
+
+
+
+
+
+
+@media screen and (max-width: 1599px )
+    .streem-window
+        padding-left: 50px
+
+    .foot-fruits
+        height: 23vw
+    .musical-vote 
+        .btn
+            font-size: 16px
+            width: 180px
+            height: 45px
+    .streem-chat__file
+        &-name
+            font-size: 13px
+            padding-right: 35px
+        &-close
+            right: 7px
+    .streem-chat__form textarea
+        height: 80px
+        
+@media screen and (max-width: 1199px )
+    .streem-window
+        display: block
+        padding: 25px
+        &__left
+            width: 100%
+            margin-bottom: 30px
+        &__right
+            width: 100%
+    .streem-chat
+        height: auto
+        &__messages
+            min-height: 295px
+    .foot-fruits 
+        height: 17vw
+        img:first-child
+            top: auto
+            bottom: 10vw
+    .stream-schedule 
+        p
+            // width: 58vw
+
+    .streem-window
+        &__title
+            font-size: 30px
+            height: 50px
+        &__images img:first-child
+            left: -5vw
+    .header .container::after,
+    .streem-window__images img:nth-child(8),
+    .streem-window__images img:nth-child(9),
+    .streem-window__images img:nth-child(10)
+        display: none
+
+    .foot-fruits img:nth-child(3)
+        width: 50vw
+        right: -20vw
+        bottom: -12vw
+
+
+
+
+@media screen and (max-width: 950px )
+    .streem-window
+        &__title
+            font-size: 24px
+            height: 45px
+    .foot-contacts
+        font-size: 16px
+        padding-left: 15vw
+    .musical-vote
+        padding-left: 0
+        padding-right: 0
+
+    .b-title
+        font-size: 32px
+        padding-bottom: 25px
+    .musical-vote
+        &::before
+            display: none
+        &__item
+            display: block
+        &__left
+            width: 100%
+        &__right
+            width: 100%
+            margin-bottom: 20px
+            margin-top: 10px
+            display: block
+        &__name
+            font-size: 22px
+            padding-bottom: 3px
+        &__subname
+            font-size: 15px
+        &__nums
+            font-size: 18px
+            width: 90px
+            span
+                font-size: 11px
+
+    .stream-schedule
+        padding-left: 0
+        padding-right: 0
+        &::after
+            display: none
+
+    .stream-schedule
+        &__item
+            margin-bottom: 20px
+        p
+            width: calc( 100% - 140px )
+            padding-top: 0
+            font-size: 14px
+        &__time
+            width: 140px
+            padding-right: 0
+            font-size: 18px
+            &::after
+                display: none
+
+    .foot-contacts
+        padding-left: 0
+        padding-right: 0
+        &::before,
+        &::after
+            display: none
+            
+    .foot-fruits 
+        img
+            &:first-child
+                bottom: 0
+            &:nth-child(3)
+                width: 40vw
+                bottom: -10vw
+
+
+
+@media screen and (max-width: 750px )
+    .streem-window__images 
+        display: none
+        img
+            &:nth-child(2),
+            &:nth-child(3)
+                display: none
+    .streem-window
+        border-radius: 10px
+    .musical-vote__procent-line
+        height: 40px
+
+@media screen and (max-width: 450px )
+    .foot-fruits 
+        height: 20vw
+        img
+            &:first-child
+                width: 35vw
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                width: 65vw
+                bottom: -20vw
+    
+    .stream-schedule
+        &__time
+            width: 100%
+        &__item
+            display: block
+            width: 100%
+        p
+            width: 100%
+            padding-top: 5px
+    .musical-vote
+        &__name
+            font-size: 18px
+        &__subname
+            font-size: 13px
+        &__success 
+            .musical-vote__procent
+                display: block
+        &__nums
+            text-align: left
+            padding-bottom: 3px
+    .b-title
+        font-size: 26px
+        line-height: 1.1
+
+    .foot-contacts
+        font-size: 14px
+
+    .streem-chat
+        &__form
+            border-radius: 10px
+            .btn
+                font-size: 16px
+                width: 130px
+                height: 45px
+        &__file
+            height: 45px
+            width: 45px
+        &__name
+            padding-bottom: 5px
+        &__message
+            width: 90%
+            padding: 15px
+            border-radius: 10px
+            p
+                font-size: 12px
+    .streem-window
+        padding: 15px
+        &__title
+            font-size: 22px
+            height: auto
+            padding-bottom: 15px
+    .musical-vote 
+        .btn
+            font-size: 15px
+            height: 45px
+            width: 160px
+    .streem-chat__file
+        &-name
+            padding-left: 15px
+            padding-right: 27px
+            font-size: 12px
+            height: 30px
+            line-height: 30px
+        &-close
+            top: 0
+            height: 100%
+            background-size: 100%
+            width: 17px

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGES</title>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <ol style="width: 600px; max-width: 100%; margin: 0 auto;">
+        <li><a href="early.html">Ещё рано...</a></li>
+        <li><a href="auth.html">Регистрация</a></li>
+        <li><a href="signin.html">Вход</a></li>
+        <li><a href="streem.html">Стрим</a></li>
+        <!-- <li><a href="#"></a></li> -->
+        <!-- <li><a href="#"></a></li> -->
+        <!-- <li><a href="#"></a></li> -->
+        <!-- <li><a href="#"></a></li> -->
+        <!-- <li><a href="#"></a></li> -->
+    </ol>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

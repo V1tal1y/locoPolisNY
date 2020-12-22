@@ -1,0 +1,87 @@
+
+.header
+    padding: 40px 0 55px
+    &__logo
+        display: block
+        img
+            display: block
+    .container
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        align-items: center
+        position: relative
+        z-index: 3
+        &::after
+            content: ''
+            position: absolute
+            display: block
+            width: 3.5vw
+            height: 4vw
+            top: -3vw
+            left: 76%
+            background: url('../img/bgicons/snowflake2.png') no-repeat center
+            background-size: 100%
+    &__center
+        position: absolute
+        top: -0.915vw
+        width: 86%
+        text-align: center
+        left: 7%
+        img
+            width: 30.72vw
+            display: inline-block
+            margin-left: -1.56vw
+    .btn
+        width: 196px
+        height: 60px
+        font-size: 28px
+        padding-bottom: 2px
+
+
+
+
+
+
+
+@media screen and (max-width: 1599px )
+    .header
+        &__logo
+            width: 220px
+        .btn
+            font-size: 21px
+            width: 170px
+            height: 55px
+        
+@media screen and (max-width: 750px )
+    .header
+        padding: 20px 0 10px
+        .btn
+            width: 140px
+            font-size: 17px
+            height: 45px
+        &__center
+            position: static
+            width: 100%
+            img
+                width: 225px
+                margin-left: -12px
+        &__logo
+            width: 180px
+    
+@media screen and (max-width: 420px )
+    .header
+        &__logo
+            width: 170px
+        .btn
+            width: 120px
+            font-size: 16px
+
+@media screen and (max-width: 370px )
+    .header
+        &__logo
+            width: 140px
+        .btn
+            width: 120px
+            font-size: 15px
+            height: 40px

@@ -1,0 +1,204 @@
+<!-- @import #sorse/kit/head.kit-->
+<body class="streem-page">
+<div class="overflowx">
+<!-- @import #sorse/kit/header.kit-->
+
+
+<div class="streem">
+    <div class="container">
+        
+        <div class="streem-window">
+            <div class="streem-window__left">
+                <div class="streem-window__title">Окно трансляции</div>
+                <div class="streem-window__video">
+                    <!-- <script src="https://facecast.net/v/js/iframe.js"></script><iframe id="381vog" onload="fc_load_iframe(this)" width="976" height="549" style="border:none" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+                </div>
+            </div>
+            <div class="streem-window__right">
+                <div class="streem-window__title">Чат</div>
+                <div class="streem-chat">
+                    <div class="streem-chat__messages">
+                    </div>
+                    <div class="streem-chat__bot">
+                        <div class="streem-chat__files-name"></div>
+                        <form class="streem-chat__form">
+                            <textarea class="streem-chat__textarea" name="message" placeholder="Ваше сообщение"></textarea>
+                            <div class="streem-chat__form-bot">
+                                <div class="streem-chat__files">
+                                    <label class="streem-chat__file btn-blue" id="streem-chat__file1">
+                                        <input type="file" name="file">
+                                    </label>
+                                </div>
+                                <button class="btn btn-blue">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="streem-window__images">
+                <img src="img/bgicons/cone.png" alt="">
+                <img src="img/bgicons/ball.png" alt="">
+                <img src="img/bgicons/orange.png" alt="">
+                <img src="img/bgicons/branch.png" alt="">
+                <img src="img/bgicons/star.png" alt="">
+                <img src="img/bgicons/spiral.png" alt="">
+                <img src="img/bgicons/spiral.png" alt="">
+                <img src="img/bgicons/snowflake.png" alt="">
+                <img src="img/bgicons/snowflake.png" alt="">
+                <img src="img/bgicons/snowflake3.png" alt="">
+            </div>
+        </div>
+
+        <div class="musical-vote">
+            <div class="b-title">Музыкальное голосование</div>
+            <div class="musical-vote__list">
+                <div class="musical-vote__item">
+                    <div class="musical-vote__left">
+                        <div class="musical-vote__name">Название музыкальногопроизведения</div>
+                        <div class="musical-vote__subname">Название музыкальногопроизведения</div>
+                    </div>
+                    <div class="musical-vote__right">
+                        <a class="btn btn-blue">Проголосовать</a>
+                        <div class="musical-vote__procent">
+                            <div class="musical-vote__nums">
+                                40 %
+                            </div>
+                            <div class="musical-vote__procent-box">
+                                <div class="musical-vote__procent-line" style="width: 40%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="musical-vote__item">
+                    <div class="musical-vote__left">
+                        <div class="musical-vote__name">Название музыкальногопроизведения</div>
+                        <div class="musical-vote__subname">Название музыкальногопроизведения</div>
+                    </div>
+                    <div class="musical-vote__right">
+                        <a class="btn btn-blue">Проголосовать</a>
+                        <div class="musical-vote__procent ">
+                            <div class="musical-vote__nums">
+                                80 %
+                            </div>
+                            <div class="musical-vote__procent-box">
+                                <div class="musical-vote__procent-line musical-vote__procent-favorite" style="width: 80%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="musical-vote__item">
+                    <div class="musical-vote__left">
+                        <div class="musical-vote__name">Название музыкальногопроизведения</div>
+                        <div class="musical-vote__subname">Название музыкальногопроизведения</div>
+                    </div>
+                    <div class="musical-vote__right">
+                        <a class="btn btn-blue">Проголосовать</a>
+                        <div class="musical-vote__procent">
+                            <div class="musical-vote__nums">
+                                5 %
+                                <span>Ваш голос учтён</span>
+                            </div>
+                            <div class="musical-vote__procent-box">
+                                <div class="musical-vote__procent-line" style="width: 5%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="musical-vote__item">
+                    <div class="musical-vote__left">
+                        <div class="musical-vote__name">Название музыкальногопроизведения</div>
+                        <div class="musical-vote__subname">Название музыкальногопроизведения</div>
+                    </div>
+                    <div class="musical-vote__right">
+                        <a class="btn btn-blue">Проголосовать</a>
+                        <div class="musical-vote__procent">
+                            <div class="musical-vote__nums">
+                                1 %
+                            </div>
+                            <div class="musical-vote__procent-box">
+                                <div class="musical-vote__procent-line" style="width: 1%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="musical-vote__item">
+                    <div class="musical-vote__left">
+                        <div class="musical-vote__name">Название музыкальногопроизведения</div>
+                        <div class="musical-vote__subname">Название музыкальногопроизведения</div>
+                    </div>
+                    <div class="musical-vote__right">
+                        <a class="btn btn-blue">Проголосовать</a>
+                        <div class="musical-vote__procent">
+                            <div class="musical-vote__nums">
+                                10 %
+                            </div>
+                            <div class="musical-vote__procent-box">
+                                <div class="musical-vote__procent-line" style="width: 10%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stream-schedule">
+            <div class="b-title">Расписание</div>
+            <div class="stream-schedule__list">
+                <div class="stream-schedule__item">
+                    <div class="stream-schedule__time">22:30-23:59</div>
+                    <p>Как было показано выше, эскапизм жизненно вызывает гендерный эгоцентризм, это обозначено Ли Россом как фундаментальная ошибка атрибуции.</p>
+                </div>
+                <div class="stream-schedule__item no-active">
+                    <div class="stream-schedule__time">22:30-23:59</div>
+                    <p>Как было показано выше, эскапизм жизненно вызывает гендерный эгоцентризм, это обозначено Ли Россом как фундаментальная ошибка атрибуции.</p>
+                </div>
+                <div class="stream-schedule__item no-active">
+                    <div class="stream-schedule__time">22:30-23:59</div>
+                    <p>Как было показано выше, эскапизм жизненно вызывает гендерный эгоцентризм, это обозначено Ли Россом как фундаментальная ошибка атрибуции.</p>
+                </div>
+                <div class="stream-schedule__item no-active">
+                    <div class="stream-schedule__time">22:30-23:59</div>
+                    <p>Как было показано выше, эскапизм жизненно вызывает гендерный эгоцентризм, это обозначено Ли Россом как фундаментальная ошибка атрибуции.</p>
+                </div>
+                <div class="stream-schedule__item no-active">
+                    <div class="stream-schedule__time">22:30-23:59</div>
+                    <p>Как было показано выше, эскапизм жизненно вызывает гендерный эгоцентризм, это обозначено Ли Россом как фундаментальная ошибка атрибуции.</p>
+                </div>
+                <div class="stream-schedule__item no-active">
+                    <div class="stream-schedule__time">22:30-23:59</div>
+                    <p>Как было показано выше, эскапизм жизненно вызывает гендерный эгоцентризм, это обозначено Ли Россом как фундаментальная ошибка атрибуции.</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="foot foot-contacts">
+            <div class="b-title">Контакты</div>
+            <p>Мышление понимает объект, как и предсказывает теория о бесполезном знании. Закон отражает генезис. Представленный контент-анализ является</p>
+            <p>г. Москва, ул. Ленина, д. 1</p>
+            <br>
+            <p>Однако Э.Дюркгейм утверждал, что аутизм интуитивно понятен. Конформизм, согласно традиционным представлениям, неустойчиво отталкивает материалистический генезис, как и предсказывает теория о бесполезном знании. Бессознательное понимает бихевиоризм. Чем больше люди узнают друг друга, тем больше восприятие отражает архетип.</p>
+            <p>г. Москва, ул. Ленина, д. 1</p>
+        </div>
+        <div class="foot-fruits">
+            <img src="img/bgicons/cone.png" alt="">
+            <img src="img/bgicons/branch4.png" alt="">
+            <img src="img/bgicons/z.svg" alt="">
+        </div>
+    </div>
+</div>
+
+
+<!-- @import #sorse/kit/foot-script.kit -->
+</div>
+<script src="js/streem.js"></script>
+
+
+
+</body>
+</html>
